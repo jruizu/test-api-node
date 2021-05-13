@@ -3,5 +3,4 @@ export interface UserInterface extends Document {
   name: String
   email: String
   password: String
-  data: String
 }

@@ -18,7 +18,7 @@ class UserController {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const response = yield user_service_1.default.create(req.body);
-                return res.status(201).json({ message: 'Create User Successfuly', data: response });
+                return res.status(200).json({ message: 'Create User Successfuly', data: response });
             }
             catch (error) {
                 return res.status(400).json({ message: 'Error' });

@@ -25,7 +25,7 @@ class ServerApp {
   }
 
   public route (): void {
-    this.app.use(api)
+    this.app.use('/api', api)
   }
 
   public start (): void {

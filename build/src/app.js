@@ -36,7 +36,7 @@ class ServerApp {
         // this.app.use(sessionMiddleware)
     }
     route() {
-        this.app.use(api_1.default);
+        this.app.use('/api', api_1.default);
     }
     start() {
         this.app.listen(this.app.get('port'), () => __awaiter(this, void 0, void 0, function* () {
